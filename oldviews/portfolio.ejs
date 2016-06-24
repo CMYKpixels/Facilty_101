@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Templating with EJS</title>
+</head>
+<body>
+    <h1>Welcome Home</h1>
+    <p>Ma première page EJS en templating !!!</p>
+    <hr>
+    <div>
+    <ul>
+        <% for (var i=0; i<mes_livres.length; i++) { %>
+            <li> <%= mes_livres[i] %> </li>
+        <% } %>
+    </ul>
+    </div>
+    <p>Le livre sélectionné est : <%= livre_en_cours %></p>
+</body>
+</html>

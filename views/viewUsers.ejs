@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Nom du site</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	</head>
+	<body>
+		<div class="container">
+			<h1>Voir les utilisateurs</h1>
+				<ul>
+					<% for (var i=0; i<userlist.length; i++) { %>
+						<li><%= userlist[i].username %></li>
+					<% } %>
+				</ul>
+
+		</div>
+	</body>
+</html>
